@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+/* class notatin .  */
+.box-container{
+    background-color: dodgerblue;
+    height: 100px;
+    width: 100px;
+    color:white;
+    padding:10px;
+    margin:10px;
+    border:dashed 5px black;
+    border-radius: 100px;
+}
+
+.btn{
+    border:none;
+    padding:5px 10px 5px 10px;
+    background-color: dodgerblue;
+    color:white;
+    border-radius: 5px;
+            /* top right bottom left */
+}
+
+/* .btn:hover{
+    background-color: blue;
+    cursor: pointer;    
+} */
+
+
+.cancel-btn{
+    background-color: white;
+    color:gray;
+    border:solid 1px gray;
+}
+
+.custom-input{
+    border:dashed 2px black;
+    outline: none;
+    padding:5px 10px;
+    border-radius: 10px;
+}
+/* whenever type input , focus */
+.custom-input:focus{
+    outline: none;
+    background-color: gray;
+
+}
+.custom-text{
+  font-family: 'Poppins', sans-serif;
+}

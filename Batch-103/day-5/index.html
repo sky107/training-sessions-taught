@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+   .main-container{
+    background-color: dodgerblue;
+    padding:10px;
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: row; row */
+    /* flex-direction: c; */
+    justify-content:space-evenly ;
+   } 
+   .block{
+    background-color: green;
+    /* flex-grow: 1; */
+    margin:5px;
+    height: 50px;
+    width: 50px;
+   }
+
+
+
+
+   /*  */
+   .navbar{
+    background-color: aliceblue;
+   }
+   /* navbar class ke andar ul target */
+   .navbar ul {
+    display: flex;
+    /* bullets ko remove */
+    list-style-type: none;
+   }
+   .navbar ul li {
+    padding: 10px;
+    cursor: pointer;
+   }
+
+   .navbar ul li .submenu{
+    position: absolute;
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+   }
+   /* ----------------------> */
+   .navbar ul li:hover .submenu{
+    visibility: visible;
+   }
+   .navbar ul li:hover .submenu .nested-submenu{
+    position: absolute;
+    visibility: hidden;
+    display: flex;
+    flex-direction: row;
+    background-color: dodgerblue;
+    /* right:0; */
+    left:200px;
+    top:50px;
+
+   }
+   .navbar ul li:hover .submenu:hover .nested-submenu{
+   
+    visibility: visible;
+   }
+
+   /*  */
+
+
+</style>
+
+<body>
+    <!-- Flexboxes, Navbar -->
+    
+    <nav class="navbar">
+            <ul>
+                <li>Home</li>
+                <li>About us
+                    <ul class="submenu">
+                        <li>About-1</li>
+                        <li>About-2</li>
+                    </ul>
+
+
+                </li>
+                <li>Career</li>
+                <li>Services
+
+                    <ul class="submenu">
+                        <li>Mobile App Development</li>
+                        <li>Web Development
+                            <ul class="nested-submenu">
+                                <li>A</li>
+                                <li>B</li>
+                            </ul>
+
+                        </li>
+                    </ul>
+
+                </li>
+            </ul>
+    </nav>
+
+
+</body>
+</html>

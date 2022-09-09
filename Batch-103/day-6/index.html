@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <table>
+        <tbody>
+            
+        </tbody>
+    </table>
+
+    <div class="title-block">
+        Hello
+    </div>
+
+
+    <input />
+
+
+    <script>
+
+// DOM Manipulate
+
+        // data api se fetch
+// valid Javscript Sytax
+// fetch some data
+// .then handle the data received 
+// Javsript Conecpt Promises
+
+//Javascript -> functions
+// arguments
+function a(){
+    
+    // code
+    console.log("FUNCTION CALLED")
+
+}
+// calling of function
+a();
+
+// arrow function
+const b=()=>{
+    console.log("ARROW FUNCTION CALLED")
+    return 12312;
+}
+// this sytax runs the code inside function and return value
+const square=(value)=>{
+    
+    return value*value
+}
+
+console.log(square(9));
+
+let user = {
+    "name":"SIDDHARTH",
+    "cgpa":"10"
+}
+
+
+
+// JSON
+// console.log(user.cgpa)
+
+// let obj=JSON.parse(JSON.stringify(user));
+// console.log(obj);
+
+
+
+// console.log(titleBlock)
+ 
+fetch('https://jsonplaceholder.typicode.com/todos/1')
+  .then(response => response.json())
+  .then(json => {
+      console.log(json)
+
+    // node refernce of that element
+    let titleBlock=document.querySelector(".title-block");
+
+    // DOM Manipulate
+    titleBlock.style.backgroundColor='red';
+    titleBlock.style.display='none';
+    titleBlock.innerHTML=json.title;
+
+  })
+
+//JSON
+    </script>
+</body>
+</html>
