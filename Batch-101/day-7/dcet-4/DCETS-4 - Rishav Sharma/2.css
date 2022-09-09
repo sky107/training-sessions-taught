@@ -1,0 +1,138 @@
+*{
+    padding: 0px;
+    
+}
+
+
+.navbar {
+    background-color: black;
+   
+    
+}
+
+.navbar ul {
+    display: flex;
+    align-items: right;
+    justify-content: center;
+    color: white;
+    background-color: black;
+    
+}
+
+.navbar ul li{
+    padding: 15px;
+}
+
+.navbar ul li:hover .menu1{
+    color: black;
+    background-color: white;
+    visibility: visible;
+}
+.navbar ul li .menu1{
+    visibility: hidden;
+    color: black;
+    background-color: white;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.navbar ul li:hover .menu2{
+    color: black;
+    background-color: white;
+    visibility: visible;
+}
+.navbar ul li .menu2{
+    visibility: hidden;
+    color: black;
+    background-color: white;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.navbar ul li:hover .menu3{
+    color: black;
+    background-color: white;
+    visibility: visible;
+}
+.navbar ul li .menu3{
+    visibility: hidden;
+    color: black;
+    background-color: white;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    cursor: pointer;
+}
+.AC{
+    background-color: rgb(223, 113, 16);
+    color: white;
+    border-radius: 8px;
+    length: 100px;
+    height: 50px;
+}
+footer{
+    display: flex;
+    background-color: black;
+    justify-content: left;
+    flex-wrap: wrap;
+
+}
+
+.gog{
+ background-color: black;
+ color: white;
+ display: flex;
+ list-style: none;
+}
+.d{
+    list-style: none;
+    display: flex;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 20px;
+    width: 0px;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px 2px;
+    border-radius: 50%;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+
+  
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+  
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+  .j{
+    border: red 3px;
+  }
+  

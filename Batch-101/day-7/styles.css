@@ -1,0 +1,33 @@
+h1 {
+  background-color: lightgoldenrodyellow;
+}
+h1 i {
+  background-color: dodgerblue;
+}
+
+.btn, .btn-tertiary, .btn-secondary, .btn-primary {
+  outline: none;
+  background-color: white;
+  border: dashed 2px black;
+  border-radius: 8px;
+  padding: 12px 14px;
+  font-size: 18px;
+}
+.btn:hover, .btn-tertiary:hover, .btn-secondary:hover, .btn-primary:hover {
+  transform: scale(1.2);
+}
+
+.btn-primary {
+  background-color: dodgerblue;
+  color: #fff;
+}
+
+.btn-secondary {
+  background-color: #eee;
+  color: black;
+}
+
+.btn-tertiary {
+  background-color: #ccc;
+  color: #fff;
+}/*# sourceMappingURL=styles.css.map */

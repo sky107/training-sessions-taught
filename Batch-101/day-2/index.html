@@ -1,0 +1,293 @@
+<!-- FORMS , TABLES, SEND REQUEST TO BACKEND, BASIC CSS -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<!-- <body>
+
+  <header>
+
+    <nav>
+
+    </nav>
+
+
+  </header>
+
+
+  <section>
+
+    <article>
+
+
+    </article>
+  </section>
+
+
+
+  <section>
+
+    <article>
+
+
+    </article>
+  </section>
+
+
+  <section>
+
+    <article>
+
+
+    </article>
+  </section>
+
+
+
+  <footer>
+
+
+    <address>
+
+      Block 123 , Shaktinagar
+    </address>
+
+
+
+    &copy; 2022-2023
+
+  </footer>
+
+
+
+
+
+
+
+</body> -->
+<style>
+  .table-content {
+    border: solid 1px black;
+  }
+
+
+  #test-container {
+    background-color: dodgerblue;
+    /* display: flexbox; */
+    display: flex;
+    flex-wrap: wrap;
+    /* color: red; */
+  }
+
+  .internal-container {
+    border: solid 1px black;
+    flex-grow: 1;
+    /* padding: 10px; */
+    /* margin: 20px; */
+    /* width: 400px; */
+  }
+</style>
+
+
+<body>
+
+
+  <div id="test-container">
+
+    <div class="internal-container">A</div>
+    <div class="internal-container">A</div>
+    <div class="internal-container">A</div>
+    <div class="internal-container">A</div>
+    <div class="internal-container">A</div>
+    <div class="internal-container">A</div>
+    <div class="internal-container">A</div>
+  </div>
+
+
+
+  <!-- colspan rowspan  -->
+
+  <!-- <table class="table-content">
+
+    <tr>
+
+      <td>Monday is big </td>
+      <td> Maths</td>
+      <td> Maths</td>
+      <td> Maths</td>
+      <td> Maths</td>
+      <td> Maths</td>
+      <td> Maths</td>
+      <td> Maths</td>
+      <td> Maths</td>
+      <td> Maths</td>
+    </tr>
+
+
+FLEXBOX R&D
+
+  <tr>
+
+    <td>Monday </td>
+    <td> Maths</td>
+    <td> Maths</td>
+    <td> Maths</td>
+    <td> Maths</td>
+    <td> Maths</td>
+    <td> Maths</td>
+    <td> Maths</td>
+    <td> Maths</td>
+    <td> Maths</td>
+  </tr>
+
+
+  <tr style="background-color: aqua;">
+
+    <td>Monday </td>
+    <td> Maths</td>
+    <td> Maths</td>
+    <td> Maths</td>
+    <td style="background-color: red;"> Maths</td>
+    <td> Maths</td>
+    <td> Maths</td>
+    <td> Maths</td>
+    <td> Maths</td>
+    <td> Maths</td>
+  </tr>
+
+
+  <tr>
+
+    <td>Monday </td>
+    <td> Maths</td>
+    <td> Maths</td>
+    <td> Maths</td>
+    <td> Maths</td>
+    <td> Maths</td>
+    <td> Maths</td>
+    <td> Maths</td>
+    <td> Maths</td>
+    <td> Maths</td>
+  </tr>
+
+
+  </table> -->
+
+  <!-- <input type="text" /> -->
+
+  <!-- API -->
+  <!-- <form action="" method="post" enctype="multipart/form-data">
+    <!-- DATA TRANSER , GET POST-->
+  <!-- by default get -->
+  <!-- <label for="f_name" /> FIRST name
+  <input type="text" value="" name="f_name" />
+
+  <label for="lname" /> LAST name
+  <input type="text" value="" name="lname" placeholder="Enter Last Name" />
+
+
+  <input type="file" accept="image/png" value="imporaatn_dcoumentd" />
+  <input type="submit" value="Submit the data" />
+
+
+  </form> -->
+
+
+  <!-- -->
+
+  <!-- TABLE + FORM  -->
+
+  <!-- <form action="" method="" enctype="multipart/form-data">
+
+
+    <table style="border:solid 1px black;">
+
+
+      <!-- <div>
+        Hello world
+      </div> -->
+
+  <!-- <div>
+        <span></span>
+      </div> -->
+
+  <tr>
+    <td>First namer</td>
+    <td>
+      <input type="text" name="fname" id="id_for_fname" />
+    </td>
+  </tr>
+
+  <tr>
+    <td>List name</td>
+    <td>
+      <input type="text" name="fname" id="id_for_fname" />
+    </td>
+  </tr>
+  <tr>
+    <td>Resume Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi porro dignissimos cumque aspernatur
+      laboriosam fuga veniam vel, ratione, deleniti eum a dolorem nesciunt sed qui aliquid! Voluptate reprehenderit
+      labore vero?</td>
+    <td>
+      <input type="text" />
+    </td>
+  </tr>
+  <tr>
+    <td>First namer</td>
+    <td>
+      <input type="text" />
+    </td>
+  </tr>
+
+
+  <tr>
+    <td>Gender</td>
+    <td>
+
+      <!-- Radio button -->
+      <!-- checkbox -->
+      <!-- {name: value} -->
+      <!-- {gender:"Female"} -->
+      <!-- <input type="radio" name="gender" value="Male">Male</input>
+          <input type="radio" name="gender" value="Female">Female</input>
+ -->
+
+      <!-- {city:"delhi"} -->
+      <!-- <select name="city" id="city">
+            <option value="mumbai">Mumabi</option>
+            <option value="delhi">Delhis</option>
+            <option value="gwalior">Gwalior</option>
+          </select> -->
+
+
+    </td>
+  </tr>
+
+
+
+  </table>
+
+
+
+
+
+  </form> -->
+
+
+
+
+
+
+</body>
+
+
+
+
+</html>

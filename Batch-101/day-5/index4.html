@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <base target="_ blank">
+</head>
+
+<style>
+  * {
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .navbar {
+    background-color: #eee;
+  }
+
+  .navbar ul {
+    display: flex;
+    list-style-type: none;
+  }
+
+  .navbar ul li {
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .navbar ul li:hover .submenu {
+    background-color: dodgerblue;
+    color: white;
+    visibility: visible;
+
+  }
+
+  .navbar ul li .submenu {
+    position: absolute;
+    background-color: #ccc;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+
+
+
+
+  footer {
+    background-color: navy;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .block {
+    color: #fff;
+    background-color: #ccc;
+    padding: 10px 20px;
+    flex-grow: 1;
+
+  }
+
+  .contact-block {
+    /* flex-grow: 2; */
+    /* flex-shrink: 0; */
+    background-color: green;
+  }
+</style>
+
+<body>
+
+
+  <nav class="navbar">
+
+    <ul>
+      <li>
+
+        <i class="fa-solid fa-bars"></i> Home
+      </li>
+      <li>About</li>
+      <li>Products
+        <ul class="submenu">
+          <li>A</li>
+          <li>B</li>
+          <li>C</li>
+        </ul>
+      </li>
+      <li>Services
+
+        <ul class="submenu">
+          <li>S1</li>
+          <li>
+            <a href="https://www.redgates.in">
+              S2
+            </a>
+          </li>
+          <li>S3</li>
+        </ul>
+
+
+      </li>
+    </ul>
+
+
+
+  </nav>
+
+
+
+
+
+
+  <label for="storage"> 20% </label>
+  <meter id="storage" min="10" max="40" value="30">
+    20%
+  </meter>
+  <footer>
+
+    <div class="block contact-block" draggable="true">
+      <ul>
+        <li>
+          <a href="https://www.google.com">
+
+            Contactus
+          </a>
+        </li>
+        <li>Careers</li>
+        <li>Careers</li>
+        <li>Careers</li>
+        <li>Careers</li>
+        <li>Careers</li>
+        <li>Careers</li>
+      </ul>
+    </div>
+
+    <div class="block ">
+      <ul>
+        <li>Contactus</li>
+        <li>Careers</li>
+        <li>Careers</li>
+        <li>Careers</li>
+        <li>Careers</li>
+        <li>Careers</li>
+        <li>Careers</li>
+      </ul>
+    </div>
+    <div class="block">
+      <ul>
+        <li>Contactus</li>
+        <li>Careers</li>
+        <li>Careers</li>
+        <li>Careers</li>
+        <li>Careers</li>
+        <li>Careers</li>
+        <li>Careers</li>
+      </ul>
+    </div>
+
+  </footer>
+  <br />
+  <hr />
+
+  &copy; 2022
+
+</body>
+
+</html>

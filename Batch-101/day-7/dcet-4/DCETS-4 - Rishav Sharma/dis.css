@@ -1,0 +1,31 @@
+.disc {
+    display: flex;
+    background-color: blue;
+   
+    
+}
+.navbar ul li:hover .abc{
+    color: black;
+    background-color: white;
+    visibility: visible;
+}
+.abc{
+    display: flex;
+    text-align: center;
+    color: white;
+    justify-content: center;
+}
+.abc:hover {
+    cursor:pointer;
+    
+}
+.log{
+    width:50px;
+    height:30px;
+    border-radius:10px;
+    color: black;
+   
+    text-align: left;
+  
+    background-color: white;
+}

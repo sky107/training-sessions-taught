@@ -1,0 +1,64 @@
+<!-- Navbar, footer, bootstrap -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<style>
+  @keyframes custom-fade {
+    0% {
+      opacity: 1;
+    }
+
+    50% {
+      opacity: 0.5;
+      /* background-color: blue; */
+    }
+
+    100% {
+      opacity: 0.1;
+
+    }
+  }
+
+  .block {
+    background-color: dodgerblue;
+    height: 60px;
+    width: 60px;
+    transition: all 1s;
+  }
+
+  .block:hover {
+    animation: custom-fade 1s;
+  }
+
+  /* .block:hover {
+    transform: rotate(360deg);
+  } */
+
+
+  /* Keyframes , it allows us to define custom animations */
+  /* // 1sec  , 0.5  */
+
+  .image {
+    clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%);
+
+  }
+</style>
+
+<body>
+
+  <div class="block">
+
+  </div>
+
+  <img src="https://picsum.photos/200/300" class="image" />
+</body>
+
+</html>

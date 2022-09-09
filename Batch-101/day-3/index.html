@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!--  -->
+  <link rel="stylesheet" href="index.css">
+</head>
+<!-- CSS Animation , Navbar, Footer -->
+<!--  Three , inline, external , internal -->
+
+<!-- 
+
+avoid inline css 
+ -->
+
+<!--  selectors -->
+<style media="screen">
+  /* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap'); */
+  /* Units important */
+  /* vw, vh */
+  /* html{
+    
+  } */
+
+
+  * {
+    font-family: 'Poppins', sans-serif;
+    /*  */
+  }
+
+
+  :root {
+
+    font-size: 16px;
+
+  }
+
+
+  .test-input {
+    border: dashed 1px #ccc;
+    outline: none;
+    /* focus input dy defautl border color outline over */
+  }
+
+  /* : selctors */
+  .test-input:focus {
+    background-color: #eee;
+  }
+
+  .test-input:hover {
+    /* background-color: red; */
+  }
+
+  #test-button {
+    outline: none;
+    border: none;
+    padding: 10px 12px;
+    border-radius: 10px;
+    transition: all 1s;
+    /*  type duration delay */
+  }
+
+  #test-button:hover {
+    background-color: blue;
+    font-size: larger;
+
+    /* transform: translate(50px); */
+    /* scale, rotate,  */
+    /* tranform , object dimension modify  */
+  }
+
+  .test-container {
+    background-color: dodgerblue;
+    text-transform: uppercase;
+    /* height: 50vh; */
+    /* 16px -> 1em */
+    /* width: 50vw; */
+    padding: .5em .5em;
+  }
+
+  h1:nth-child(4) {
+    color: crimson;
+  }
+
+  .flex-container {
+    background-color: #eee;
+
+    /* display:flex, grid,block, inline-flex  */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* justify-content: space-evenly; */
+    /* space-evenly,space-around, flex-end */
+
+  }
+
+  .flex-inside-container {
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+    background-color: orange;
+    /* color: white; */
+  }
+
+  .footer-container {
+    /* position */
+    position: fixed;
+    /* static , reative , absolute  */
+    /* fixed, absoulute, relative */
+    bottom: 0px;
+    background-color: white;
+    width: 100vw;
+    height: 10vh;
+    /* relative, absoulte,sticky, fixed */
+
+  }
+
+
+  /* DOM , Document Objet Mapping/Model */
+</style>
+
+<body>
+
+  <!-- <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis harum, corrupti cum perferendis, in rerum est,
+    magni et repellat deserunt voluptas deleniti eaque illo reiciendis eligendi fugiat cumque omnis adipisci quos
+    commodi dolore inventore. Molestiae ratione nostrum rerum error obcaecati nobis necessitatibus alias unde nihil,
+    assumenda aspernatur sunt eius sed voluptatibus doloribus iste architecto quod corrupti minima deserunt cumque
+    beatae. Fugit adipisci velit qui tempora maiores nemo, unde repellat in molestiae vel eum eveniet! Nobis totam
+    voluptas ut fuga, dicta voluptatum est quia dolores, ipsa porro molestias ipsam sed, unde quae perspiciatis eum
+    maxime quis. Adipisci distinctio earum temporibus hic?</h1>
+  <h1>Hellow</h1>
+  <h1>Hellow</h1>
+  <h1>Hellow</h1>
+  <h1>Hellow</h1> -->
+
+
+  <!-- <div class="container" style="border:solid 10px blue;">
+
+    Hello world
+
+  </div> -->
+
+
+  <input class="test-input" />
+
+  <button id="test-button">Hello world</button>
+
+
+  <h1>Hello world</h1>
+  <h1>Hello world</h1>
+  <h1>Hello world</h1>
+  <h1>Hello world</h1>
+  <h1>Hello world</h1>
+  <h1>Hello world</h1>
+  <h1>Hello world</h1>
+  <h1>Hello world</h1>
+  <h1>Hello world</h1>
+  <h1>Hello world</h1>
+  
+  <div class="test-container">
+    Hello world
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quia magnam, nulla maiores deleniti distinctio
+    fugit tenetur dolorum accusamus doloribus iusto? Nostrum sapiente fuga placeat, in doloremque voluptatum aut saepe
+    voluptate nemo necessitatibus nobis totam quasi iure, consequuntur earum quibusdam consequatur repellendus, ex
+    doloribus qui tenetur unde vel molestiae. Consectetur nihil voluptas recusandae dolorem similique at aperiam
+    veritatis possimus eum temporibus debitis enim necessitatibus nam perspiciatis assumenda odio sequi deleniti vel
+    reiciendis, dolorum mollitia ullam expedita beatae nobis. Harum, quas, sequi quae deserunt assumenda non, dolore
+    pariatur cumque reprehenderit atque accusantium dolores itaque quibusdam eveniet quaerat inventore eius aliquam
+    laborum ad eligendi amet similique! Aperiam aut, perferendis nam nesciunt laudantium quis, rem facilis cumque
+    recusandae minus, ab corporis. Nulla reiciendis reprehenderit magni esse tenetur adipisci voluptatibus ut minima
+    culpa ea, nam non earum consectetur facere minus dolore exercitationem rerum harum quod perferendis vero, recusandae
+    sequi dolorem ex! Beatae laborum ipsam dicta a nemo. Quisquam nostrum tempore veniam magni cumque provident
+    voluptates perferendis dolores, at obcaecati incidunt perspiciatis nihil illum dolorum quas. Iure, libero
+    repudiandae necessitatibus magnam harum saepe ratione culpa, numquam voluptates dolor deserunt! Esse, repudiandae
+    atque. Ipsum, dolorum blanditiis. Debitis expedita aliquam, asperiores error porro rem consequatur consequuntur, est
+    optio, nostrum molestiae cupiditate iste. Eius cupiditate officia, nulla id in quod iste sequi quia, ab mollitia
+    aliquam molestiae doloremque dolore consequuntur labore eaque. Doloremque incidunt totam laudantium ut nesciunt esse
+    quo itaque molestias nihil soluta vitae adipisci voluptas reprehenderit, aliquid sint tenetur id qui! Tempore nam,
+    vel ea maxime rerum tempora, sit aliquam nostrum nobis id officiis. Nesciunt molestiae aut neque explicabo ex,
+    assumenda natus at reiciendis autem sunt. Earum velit, porro voluptatibus recusandae vel molestiae corporis
+    excepturi ducimus ab dolores exercitationem ad sapiente? Praesentium blanditiis culpa enim error ipsa magni possimus
+    odio consectetur rerum totam. Sapiente eaque sequi totam consequatur vero tenetur natus soluta officia? At, sed,
+    animi nesciunt modi earum tempora, incidunt rerum temporibus labore magni molestiae omnis eos dignissimos? Voluptas,
+    ullam id qui consequuntur repellendus nisi autem, facilis, in labore ducimus recusandae quam non iure est unde
+    fugiat quasi! Commodi ex repellat reiciendis distinctio, sunt deleniti, hic debitis, eveniet eius at alias soluta
+    dolore temporibus obcaecati saepe maiores autem aliquam exercitationem molestias nisi fugit ducimus? Laborum quas
+    itaque ipsa vero aperiam eveniet sapiente, fugit ab soluta repellat odio magni necessitatibus in earum modi
+    obcaecati placeat, maxime inventore quis maiores ratione omnis nemo animi? Porro, eveniet sapiente nemo ducimus
+    vitae error nisi et quia laudantium commodi! Culpa sint ipsum laudantium facilis, distinctio asperiores quibusdam
+    esse sunt modi fugit? Soluta laudantium nam adipisci consequuntur aspernatur modi dolores, enim quasi ullam aliquam
+    reprehenderit aliquid, suscipit commodi ducimus, eum alias voluptatibus reiciendis magni rerum voluptas! Ducimus
+    possimus, molestiae porro nostrum vitae laboriosam ad quod nulla sint nisi adipisci ipsum dolore doloribus,
+    cupiditate at ut magni alias beatae iusto aliquid laudantium suscipit! Velit inventore magnam suscipit repellendus
+    molestiae ipsa dolores nam eum nemo doloremque. Odio velit quos, magnam, facere, modi pariatur recusandae similique
+    omnis sunt illum accusantium earum officia saepe cumque.
+    <div>
+
+    </div>
+  </div>
+
+
+  <div class="flex-container">
+    <div class="flex-inside-container">A</div>
+    <div class="flex-inside-container">B</div>
+    <div class="flex-inside-container">C</div>
+    <div class="flex-inside-container">D</div>
+    <div class="flex-inside-container">E</div>
+    <div class="flex-inside-container">F</div>
+    <div class="flex-inside-container">A</div>
+    <div class="flex-inside-container">B</div>
+    <div class="flex-inside-container">C</div>
+    <div class="flex-inside-container">D</div>
+    <div class="flex-inside-container">E</div>
+    <div class="flex-inside-container">F</div>
+    <div class="flex-inside-container">A</div>
+    <div class="flex-inside-container">B</div>
+    <div class="flex-inside-container">C</div>
+    <div class="flex-inside-container">D</div>
+    <div class="flex-inside-container">E</div>
+    <div class="flex-inside-container">F</div>
+  </div>
+
+  <div class="footer-container">
+
+    Accept all cookies
+  </div>
+
+
+
+
+</body>
+
+</html>

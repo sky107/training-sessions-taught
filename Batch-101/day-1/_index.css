@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+  margin:0px;
+  padding:0px;
+}
+
+:root{
+  color:white;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  /* font-family: src(/fonts/); */
+
+}
+/* html{
+  font-size:16px;
+} */
+
+
+
+.container{
+  background-color: dodgerblue;
+  width:100%;
+  width: 100vw;
+  display: block;
+  /* height: 100vw; */
+  /* height: 100px; */
+  padding:10px;
+  border:dashed 4px blue;
+  /* padding: 10px 120px; */
+          /* y direction | x direction */
+  padding: 10px 10px 12px 100px;
+          /* top right down left */
+ /* display: absolute; */
+  position: fixed;
+  /* bottom:0px; */
+  /* right: 200px; */
+  /* left:300px; */
+ /* bottom:40px; */
+  /* bottom: 10px; */
+
+  
+
+
+  /* width:calc(100-340); */
+}
+
+
+.container {
+  /* color:white; */
+}
+
+h1::first-line{
+  /* color:red; */
+  text-transform: uppercase;
+}
+
+
+
+/* view ports
+
+10vw ,100vw;
+100%
+
+*/
+
+
+/* Transitions */
+/* Keyframes Animations */
+
+
+
+
+button{
+  padding:.5em .3em;
+  border: none;
+  outline: none;
+              /* delay */
+  transition:all 1s .5s;
+}
+
+button:hover{
+  transform: rotate(40deg);
+  transform: translate(100px);
+  /* font-size:4em; */
+  outline: none;
+  /* background-color: #ccc; */
+}
+
+input{
+  padding:.5em .4em;
+  border: none;
+  outline: none;
+  border-radius: .5em;
+  border-color: #ccc;
+  background-color: #eee;
+  border: solid .09em black;
+}
+input: focus{
+  /* outline: none; */
+}
+
+.f{
+  display: flex;
+  margin:.5em;
+  background-color: #eee;
+  padding:.7em;
+  justify-content: center;
+  /* justify-content: space-around; */
+  flex-wrap: wrap;
+  /* flex-direction: ; */
+}
+.f-i{
+  background-color:dodgerblue ;
+  color: white;
+  padding:.5em .5em;
+  margin:.5em;
+}

@@ -1,0 +1,79 @@
+// SASS
+//  CSS + Additional Featuers that is not supported in .css file
+//                   Functions , varaibles, efficent way se reuse code 
+
+
+// Variables , 
+//  we denote by starting with $ symbol
+
+
+// px -> rem dynamic 
+
+
+
+$theme-primary-color:dodgerblue;
+$theme-secondary-color:#eee;
+$theme-tertiary-color:#ccc;
+$white:#fff;
+$black:black;
+$default-btn-padding:12px 14px;
+$default-center:center;
+
+
+// GLOBAL LEVEL FONT-SIZE : MAP
+
+$font-map: ("h1": 20px, "h2": 18px, "h3": 16px);
+$color-map:("primary":"dodgerblue");
+
+// code reusability & modularity & sacalability
+// maintainability
+
+//  primary , secondary , tertiary button
+// color change , dimesion same
+
+
+
+//  You can write normal css here
+
+h1{
+
+  background-color: lightgoldenrodyellow;
+
+  i{
+    background-color: $theme-primary-color;
+  }
+
+}
+
+.btn{
+  outline: none;
+  background-color: white;
+ border:dashed 2px black;
+  border-radius: 8px;
+  padding:$default-btn-padding;
+  font-size: map-get($font-map,'h2' );
+
+    &:hover{
+      transform: scale(1.2);
+
+    }
+}
+
+.btn-primary{
+  @extend .btn;
+  background-color: $theme-primary-color;
+  color:$white;
+}
+
+.btn-secondary{
+  @extend .btn;
+  background-color: $theme-secondary-color;
+  color:$black;
+
+}
+
+.btn-tertiary{
+@extend .btn;
+background-color: $theme-tertiary-color;
+color:$white;
+}

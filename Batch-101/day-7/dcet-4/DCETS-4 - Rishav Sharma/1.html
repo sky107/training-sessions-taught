@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ans1</title>
+    <style>
+    .block1{
+        border: solid red 2px;
+        background-color: red;
+        height: 50px;
+        width:50px;
+        transition: 10s;
+        display: flex;
+        flex: 2;
+    }
+
+    .block1:hover{
+        transform: rotate(360deg);
+        flex: 4;
+        height: 400px;
+        width:400px;
+        background-color: green ;
+        animation: mymove 10s;
+    }
+    
+    @keyframes mymove {
+  0%   {top: 400px; background: red; width: 100px;}
+  5% {top: 400px; background: yellow; width: 300px;}
+  15% {top: 400px; background: blue; width: 300px;}
+  25%  {top: 400px; background: black; width: 300px;}
+  35% {top: 400px; background: pink; width: 300px;}
+  50% {top: 400px; background: skyblue; width: 300px;}
+  70% {top: 400px; background: yellow; width: 300px;}
+  80%  {top: 400px; background: grey; width: 300px;}
+  100%  {top: 400px; background: green; width: 300px;}
+}
+</style>
+    <link rel="spreadsheet" href="1.css">
+</head>
+
+<body>
+   
+    <div class="block1">
+    </div>
+    </div>
+<
+
+</body>
+</html>
